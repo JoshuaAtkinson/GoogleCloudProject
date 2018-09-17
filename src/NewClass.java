@@ -40,7 +40,7 @@ public class NewClass {
 		httpRequestBodyWriter.write
 		 ("{\"requests\":  [{ \"features\":  [ {\"type\": \"TEXT_DETECTION\""
 		 +"}], \"image\": {\"source\": { \"gcsImageUri\":"
-		 +" \"gs://teamaaron/notimage.docx\"}}}]}");
+		 +" \"gs://teamaaron/text.png\"}}}]}");
 		
 		
 		httpRequestBodyWriter.close();
@@ -68,7 +68,7 @@ public class NewClass {
 			{
 				System.out.println("Image contains text.");
 			}
-			else if(containsText == true && incorrectFile == false)
+			else if(containsText == false && incorrectFile == false)
 			{
 				System.out.println("Image does not contain text.");
 			}
